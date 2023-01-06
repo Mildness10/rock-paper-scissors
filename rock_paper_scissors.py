@@ -36,4 +36,26 @@ while no_of_games > 0:
         print('Wrong input. Try again!')
         break
     countdown.countdown_match()
-    print(random_player,'played: ', random.choice(game_choices),'\n')
+    random_player_pick = random.choice(game_choices)
+    print(random_player,'played: ', random_player_pick,'\n')
+    
+    if (random_player_pick == 'ROCK') and (player_pick.lower() == 'r'):
+        print('DRAW!\n')
+    elif (random_player_pick == 'ROCK') and (player_pick.lower() == 'p'):
+        print('PAPER beats ROCK!\n')
+    elif (random_player_pick == 'ROCK') and (player_pick.lower() == 's'):
+        print('ROCK beats SCISSORS!\n')
+    elif (random_player_pick == 'PAPER') and (player_pick.lower() == 'r'):
+        print('PAPER beats ROCK!\n')
+    elif (random_player_pick == 'PAPER') and (player_pick.lower() == 'p'):
+        print('DRAW!\n')
+    elif (random_player_pick == 'PAPER') and (player_pick.lower() == 's'):
+        print('SCISSORS beats PAPER!\n')
+    elif (random_player_pick == 'SCISSORS') and (player_pick.lower() == 'r'):
+        print('ROCK beats SCISSORS!\n')
+    elif (random_player_pick == 'SCISSORS') and (player_pick.lower() == 'p'):
+        print('SCISSORS beats PAPER!\n')
+    elif (random_player_pick == 'SCISSORS') and (player_pick.lower() == 's'):
+        print('DRAW!\n')
+    
+    no_of_games -= 1
