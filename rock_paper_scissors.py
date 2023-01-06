@@ -42,20 +42,43 @@ while no_of_games > 0:
     if (random_player_pick == 'ROCK') and (player_pick.lower() == 'r'):
         print('DRAW!\n')
     elif (random_player_pick == 'ROCK') and (player_pick.lower() == 'p'):
-        print('PAPER beats ROCK!\n')
+        player_score += 10
+        print('PAPER beats ROCK!')
+        print('POINTS:::> You: ' + str(player_score)+ ' || ' + str(random_player) + ': ' + str(random_player_score)+ '\n')
     elif (random_player_pick == 'ROCK') and (player_pick.lower() == 's'):
-        print('ROCK beats SCISSORS!\n')
+        random_player_score += 10
+        print('ROCK beats SCISSORS!') 
+        print('POINTS:::>  You: ' + str(player_score)+ ' || ' + str(random_player) + ': ' + str(random_player_score)+ '\n')
     elif (random_player_pick == 'PAPER') and (player_pick.lower() == 'r'):
-        print('PAPER beats ROCK!\n')
+        random_player_score += 10
+        print('PAPER beats ROCK!')
+        print('POINTS:::> You: ' + str(player_score)+ ' || ' + str(random_player) + ': ' + str(random_player_score)+ '\n')
     elif (random_player_pick == 'PAPER') and (player_pick.lower() == 'p'):
         print('DRAW!\n')
     elif (random_player_pick == 'PAPER') and (player_pick.lower() == 's'):
-        print('SCISSORS beats PAPER!\n')
+        player_score += 10
+        print('SCISSORS beats PAPER!')
+        print('POINTS:::> You: ' + str(player_score)+ ' || ' + str(random_player) + ': ' + str(random_player_score)+ '\n')
     elif (random_player_pick == 'SCISSORS') and (player_pick.lower() == 'r'):
-        print('ROCK beats SCISSORS!\n')
+        player_score += 10
+        print('ROCK beats SCISSORS!')
+        print('POINTS:::> You: ' + str(player_score)+ ' || ' + str(random_player) + ': ' + str(random_player_score)+ '\n')
     elif (random_player_pick == 'SCISSORS') and (player_pick.lower() == 'p'):
-        print('SCISSORS beats PAPER!\n')
+        random_player_score += 10
+        print('SCISSORS beats PAPER!')
+        print('POINTS:::> You: ' + str(player_score)+ ' || ' + str(random_player) + ': ' + str(random_player_score)+ '\n')
     elif (random_player_pick == 'SCISSORS') and (player_pick.lower() == 's'):
         print('DRAW!\n')
     
     no_of_games -= 1
+    
+if player_score > random_player_score:
+    print('🎊 YOU WIN!!! 🎊')
+elif player_score == random_player_score:
+    print('🤝 DRAW GAME. 🤝')
+else:
+    print('😔 YOU LOSE! 😔')
+    
+restart = input('Do you want to restart the game? (Y/N: ')
+if restart.lower() == 'y':
+    
