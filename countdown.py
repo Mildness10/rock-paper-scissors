@@ -1,17 +1,18 @@
 import time
-import datetime
 
-def countdown():
-    s = 5
-    
-    while s > 0:
-        timer = datetime.timedelta(seconds=s)
-        print(timer, end="\r")
-        
+def countdown_time():
+    secs = 5
+    while secs:
+        timer = '{:01d}'.format(secs)
+        print(timer, end='\r')
         time.sleep(1)
-        
-        s -= 1
-        
-countdown()
-print('Welcome to Rock Paper and Scissors!')
+        secs -= 1 
+
+def countdown_match():
+    secs = 3
+    while secs:
+        timer = '{:01d}'.format(secs)
+        print(timer, end='\r')
+        time.sleep(1)
+        secs -= 1 
     
