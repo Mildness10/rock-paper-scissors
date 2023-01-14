@@ -1,5 +1,6 @@
 import time
 
+# countdown timer to kickoff the game 
 def countdown_time():
     secs = 5
     while secs:
