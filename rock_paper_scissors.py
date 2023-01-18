@@ -6,7 +6,7 @@ def rps_game():
 
     # ALLOW PLAYER TO PICK NUMBER OF ROUNDS OF GAME AND PICK A RANDOM PLAYER TO GO UP AGAINST THEM
     no_of_games = int(input('How many rounds do you wish to play for?: '))
-    list_of_players = ['Hashirama', 'Kakashi', 'Inaki', 'Tanjiro', 'Gyomei', 'Eren', 'Lily', 'Jade', 'Abigail', 'Ankur', 'Sam', 'Joe', 'Isabella', 'Pamela', 'Wood']
+    list_of_players = ['Hashirama', 'Kakashi', 'Inaki', 'Tanjiro', 'Gyomei', 'Eren', 'Lily', 'Jade', 'Abigail', 'Ankur', 'Johan', 'Joe', 'Isabella', 'Pamela', 'Wood']
 
     # DISPLAY A MESSAGE ALONG WITH A COUNTDOWN SIGNIFYING SEARCH FOR A PARTNER
     print('Searching for opponent...')
