@@ -102,4 +102,5 @@ def restart():
     else:
         print('Wrong Input. Try Again!')
         
+ # FUNCTION CALL TO START GAME
 rps_game()
